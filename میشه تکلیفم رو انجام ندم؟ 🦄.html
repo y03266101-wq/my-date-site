@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>میشه تکلیفم رو انجام ندم؟ 🦄</title>
+<style>
+:root{--g1:#ffd6f6;--g2:#c9b6ff;--g3:#a5e8ff;--card:rgba(255,255,255,.85);--fg:#4b2a7b;--yes:#34d399;--no:#fb7185;--shadow:rgba(120,60,180,.35);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--g1:#3b1d5a;--g2:#26275e;--g3:#0f3a56;--card:rgba(30,20,60,.8);--fg:#ffe8ff;--shadow:rgba(0,0,0,.6)}}
+:root[data-theme="dark"]{--g1:#3b1d5a;--g2:#26275e;--g3:#0f3a56;--card:rgba(30,20,60,.8);--fg:#ffe8ff;--shadow:rgba(0,0,0,.6)}
+html,body{height:100%;margin:0;overflow:hidden}
+body{background:linear-gradient(160deg,var(--g1),var(--g2),var(--g3));background-size:300% 300%;animation:bg 12s ease infinite;color:var(--fg);font-family:"Comic Sans MS","Chalkboard SE",Vazirmatn,Tahoma,sans-serif;display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box;position:relative}
+@keyframes bg{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.fl{position:fixed;font-size:2rem;opacity:.85;animation:float 7s ease-in-out infinite;pointer-events:none;user-select:none}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-22px) rotate(8deg)}}
+.card{position:relative;z-index:2;background:var(--card);backdrop-filter:blur(6px);border:4px dashed #ff9ad5;border-radius:36px;box-shadow:0 14px 40px var(--shadow);padding:28px 20px 32px;max-width:420px;width:100%;text-align:center}
+.emoji{font-size:4.5rem;animation:wob 2s ease-in-out infinite}
+@keyframes wob{0%,100%{transform:rotate(-10deg) scale(1)}50%{transform:rotate(10deg) scale(1.15)}}
+h1{font-size:1.9rem;margin:8px 0 24px;line-height:1.7;background:linear-gradient(90deg,#ff4d9d,#ff9a3c,#34c759,#2eb4ff,#a05cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btns{display:flex;gap:14px;justify-content:center}
+button{font:inherit;font-size:1.4rem;font-weight:700;color:#fff;border:0;border-radius:999px;padding:14px 34px;cursor:pointer;box-shadow:0 6px 0 rgba(0,0,0,.18);transition:transform .12s;animation:bounce 1.6s ease-in-out infinite}
+button:active{transform:translateY(5px) scale(.95);box-shadow:0 1px 0 rgba(0,0,0,.18)}
+#yes{background:var(--yes)}
+#no{background:var(--no);animation-delay:.4s}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.result{font-size:2rem;line-height:1.8;color:var(--fg);-webkit-text-fill-color:currentColor;background:none}
+.big{display:block;font-size:3.2rem;animation:pop .7s ease}
+@keyframes pop{0%{transform:scale(.1) rotate(-30deg);opacity:0}70%{transform:scale(1.25) rotate(10deg)}100%{transform:scale(1);opacity:1}}
+.conf{position:fixed;top:-40px;font-size:1.8rem;z-index:5;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+body.scary{animation:none;background:radial-gradient(circle at center,#3a0000 0%,#000 75%);color:#ff2a2a}
+body.scary .card{background:rgba(10,0,0,.88);border-color:#b00;box-shadow:0 0 45px #f00;animation:shake .15s infinite,flick 1.3s infinite}
+body.scary h1{background:none;-webkit-text-fill-color:#ff2a2a;color:#ff2a2a;text-shadow:0 0 12px #f00;font-family:"Courier New",monospace}
+body.scary .emoji{animation:none;filter:drop-shadow(0 0 14px #f00)}
+body.scary .fl{filter:drop-shadow(0 0 8px #f00)}
+@keyframes shake{0%{transform:translate(2px,2px)}25%{transform:translate(-3px,1px)}50%{transform:translate(3px,-2px)}75%{transform:translate(-2px,-3px)}100%{transform:translate(2px,2px)}}
+@keyframes flick{0%,100%{opacity:1}45%{opacity:1}50%{opacity:.25}55%{opacity:1}80%{opacity:.6}}
+.scare{position:fixed;inset:0;z-index:20;background:#000;display:flex;align-items:center;justify-content:center;overflow:hidden;animation:scareOut 1.7s forwards,shake .08s infinite}
+.scare span{font-size:min(85vw,85vh);line-height:1;animation:zoom .3s ease-out}
+@keyframes zoom{from{transform:scale(.05)}to{transform:scale(1)}}
+@keyframes scareOut{0%,70%{opacity:1}100%{opacity:0;visibility:hidden}}
+</style>
+</head>
+<body>
+<span class="fl" style="top:6%;right:8%">☁️</span>
+<span class="fl" style="top:14%;left:10%;animation-delay:1s">⭐</span>
+<span class="fl" style="top:70%;right:10%;animation-delay:2s">🌈</span>
+<span class="fl" style="top:78%;left:8%;animation-delay:.5s">🦋</span>
+<span class="fl" style="top:42%;left:3%;animation-delay:3s">✨</span>
+<span class="fl" style="top:38%;right:3%;animation-delay:1.5s">🍭</span>
+<main class="card">
+  <div class="emoji" id="emoji">🦄</div>
+  <h1 id="q">میشه تکلیفم رو انجام ندم؟</h1>
+  <div class="btns" id="btns">
+    <button id="yes">آره 🎉</button>
+    <button id="no">نه 😢</button>
+  </div>
+</main>
+<script>
+var yes=document.getElementById('yes'),no=document.getElementById('no');
+var fls=[].slice.call(document.querySelectorAll('.fl')),orig=fls.map(function(f){return f.textContent;}),scaryE=['🦇','🕷️','💀','👁️','🕸️','🎃'];
+function restore(){fls.forEach(function(f,i){f.textContent=orig[i];});}
+no.addEventListener('click',function(){
+  no.style.display='none';
+  var s=document.createElement('div');s.className='scare';s.innerHTML='<span>👹</span>';document.body.appendChild(s);
+  setTimeout(function(){s.remove();},1800);
+  document.body.classList.add('scary');
+  fls.forEach(function(f,i){f.textContent=scaryE[i];});
+  document.getElementById('emoji').textContent='💀';
+  document.getElementById('q').textContent='میشه تکلیفمو انجام ندم؟ 👁️👁️';
+  try{if(navigator.vibrate)navigator.vibrate([200,100,400]);}catch(e){}
+});
+yes.addEventListener('click',function(){
+  if(document.body.classList.contains('scary'))setTimeout(function(){document.getElementById('emoji').textContent='😈';},0);
+  document.getElementById('btns').style.display='none';
+  document.getElementById('emoji').textContent='🧚‍♀️';
+  var q=document.getElementById('q');
+  q.className='result';
+  q.innerHTML='پس انجامش نمی‌دم! 😂👍<span class="big">😂👍🎉👍😂</span>';
+  var e=['😂','👍','🎉','⭐','🦄','🍭','🌈','✨'];
+  for(var i=0;i<40;i++){
+    var s=document.createElement('span');
+    s.className='conf';
+    s.textContent=e[i%e.length];
+    s.style.left=Math.random()*95+'%';
+    s.style.animationDuration=(2.5+Math.random()*3)+'s';
+    s.style.animationDelay=(Math.random()*1.5)+'s';
+    document.body.appendChild(s);
+  }
+});
+</script>
+</body>
+</html>
